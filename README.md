@@ -24,7 +24,7 @@ The basic structure of the website is:
     </div>
 
     <!-- this container has width of 200px -->
-    <div class="photo">
+    <div class="sectionleft">
         <!-- add your picture -->
         <img class="pic" src="files/img/foto.jpeg">
         <div class="subsection">
@@ -33,7 +33,21 @@ The basic structure of the website is:
     </div>
 
     <!-- this container is full-width minus 200px -->
-    <div class="maincontent">
+    <div class="sectionrigth">
+        <!-- add your content in "section" containers -->
+        <div class="section">
+            <h1>Section header<h1>
+            <div class="subsection">
+                <!-- your content -->
+            </div>
+            <div class="subsection">
+                <!-- your content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- this container is full-width -->
+    <div class="sectionwide">
         <!-- add your content in "section" containers -->
         <div class="section">
             <h1>Section header<h1>
@@ -56,7 +70,7 @@ The basic structure of the website is:
 
 ## List of urls
 
-You can collect all your urls (coauthors' websites, institutions, etc.) in the file [jsfile.js](src/jsfile.js). This allows to easily update urls without going over all the html file.
+You can collect all your urls (coauthors' websites, institutions, etc.) in the file [jsfile.js](src/jsfile.js). This allows to easily update urls without going over the html file.
 
 For example, to include the url of [CUNEF Universidad]("https://www.cunef.edu/en/") you just need to add 
 ```js
@@ -79,5 +93,3 @@ Links can show a small icon next to them depending on the content:
 - ```<a class="code"> ... </a>``` for codes
 
 These links can be deactivated by adding ```empty``` in the ```class``` attribute (eg. ```<a class="code empty"> ... </a>``` ). This will still show the icon.
-
-

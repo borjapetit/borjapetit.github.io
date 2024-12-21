@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Helvetica:200,300italic,400,400italic,500,500italic,600,600italic");
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,600,600italic");
 
 /*******************************************************************************
  DEFINE COLORS
@@ -28,13 +30,13 @@
 
 /* set global parameters */
 *{
-  font-family: 'Barlow','Helvetica',sans-serif,'Roboto','Source Sans Pro';
+  font-family: 'Roboto','Helvetica',sans-serif,'Source Sans Pro';
   margin: 0px;
   padding: 0px;
   line-height: 1.4em;
   color: inherit;
   font-size: inherit; 
-  font-weight: inherit;
+  font-weight: 200;
   text-decoration: none;
   background-color: inherit;
   -webkit-text-size-adjust: none;
@@ -45,12 +47,13 @@
 *******************************************************************************/
 
 html{
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 200;
   padding-bottom: 400px;
 }
 body{
-  min-width:880px;
+  /* width: 90%; */
+  min-width:900px;
   max-width:1000px;
   color:var(--fontmain);
   background-color:white;
@@ -59,7 +62,7 @@ body{
   padding-bottom:100px;
   display:grid;
   grid-template-columns: 200px auto;
-  grid-column-gap:50px;
+  grid-column-gap:40px;
   grid-row-gap:15px;
 }
 .grid1{
@@ -85,6 +88,7 @@ p,div{
 }
 a{
   color:var(--link);
+  display:inline-block;
 }
 a:hover{
   color:var(--linkhover);
@@ -112,43 +116,40 @@ b{
  STRUCTURE
 *******************************************************************************/
 
+.header,.footer{
+  grid-column: 1/3;
+}
+.sectionleft{
+  grid-column: 1/1;
+}
+.sectionright{
+  grid-column: 2/3;
+}
+.sectionwide{
+  grid-column: 1/3;
+}
+.show{
+  display:none;
+}
+
 /* header */
 .header{
   padding-bottom:15px;
+  border-bottom:2px solid var(--main); 
+  margin-bottom:10px;
 }
 /* title of the website */
 .title{
   color:var(--main);
-  text-align:center;
+  text-align:left;
   font-size:250%;
 }
 /* subtitle of the website */
 .subtitle{
   color:gray;
-  text-align:center;
+  color:var(--fontmain);
+  text-align:left;
   font-size:130%;
-}
-/* navigatio  var */
-.nav{
-  text-align:center;
-  margin-top:15px;
-  padding-top:10px;
-  padding-bottom:10px;
-  border-top:2px solid var(--main); 
-  border-bottom:2px solid var(--main); 
-}
-/* links in navigation bar */
-.anav,.anavs{
-  color: var(--fontmain);
-  padding-left:10px;
-  padding-right:10px;
-  min-width:100px;
-  display:inline-block;
-}
-/* links in navigation bar --> hover */
-.anav:hover,.anavs,.anavs:hover{
-  color: var(--main);
-  font-weight:bold;
 }
 /* footer */
 .footer{
@@ -158,17 +159,43 @@ b{
   border-bottom:1px solid var(--fontmain);
   margin-top:30px;
 } 
-.footer > a {
-  display:inline-block;
-  padding:5px
-}
 /* picture */
+.photo{
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+.photo:hover img.pic1,.photo img.pic2{
+  display:none;
+}
+.photo:hover img.pic2{
+  position: relative;
+  top: 0;
+  left: 0;
+  display:block;
+}
 .pic{
   margin:0px auto 20px auto;
   border:0px grey solid;
   text-align:center;
   display:block;
+  border-radius:0%;
+  width:100%;
 }
+/* .photo img{
+  animation: toggle-visibility 4s infinite;
+}
+.photo .pic1 {
+  animation-delay: 0s;
+}
+.photo .pic2 {
+  animation-delay: 2s;
+}
+@keyframes toggle-visibility {
+  0%, 50% { display: block; }
+  50.01%, 100% { display:none; } 
+} */
+
 /* div for research, teaching, etc */
 .section{
   margin-top:0px;
@@ -183,9 +210,31 @@ b{
 /* section headings */
 h1{
   color:var(--main);
-  font-size:150%;
+  font-size:125%;
   margin-bottom:15px;
   margin-top:0px;
+  background-color:#F1F1F1;
+  padding:5px;
+}
+h1.smore::before,
+h1.sless::before{
+  font-family: "FontAwesome";
+  font-size:80%;
+  color:var(--main);
+  margin:0px 6px 0px 3px;
+  padding:0px;
+}
+h1.smore,h1.sless{
+  width:100%;
+}
+h1.smore,h1.sless{
+  cursor:pointer;
+}
+h1.smore::before{
+  content: "\f196 ";
+}
+h1.sless::before{
+  content: "\f147 ";
 }
 /* paper titles */
 h2{ 
@@ -204,6 +253,7 @@ paper{
 }
 paper::before{ content: open-quote;}
 paper::after{ content: close-quote;}
+
 /* for journals */
 journal{
   color:var(--journal);
@@ -254,6 +304,7 @@ a.code::before{     content: "\f1c9 ";}
 a.github::before{   content: "\f09b ";}
 a.more::before{     content: "\f196 ";}
 a.less::before{     content: "\f147 ";}
+
 a.link::before{     content: "\f08e ";}
 a.twitter::before{  content: "\f099 ";}
 a.address::before{  content: "\f003 ";}
@@ -270,7 +321,6 @@ a.empty::before{
 a.empty:hover{
   cursor:not-allowed;
 }
-
 .calendar::before{
   font-family: "FontAwesome";
   font-size:100%;
@@ -281,13 +331,17 @@ a.empty:hover{
   content: "\f073 "; 
 }
 
+
+
+
+
 /*******************************************************************************
  ADAPT LAYOUT FOR SCREENS OF 900 px OR LESS
 *******************************************************************************/
 
 @media screen and (max-width:1000px) {
   *{
-    font-size: 15px;
+    font-size: 16px;
   }
   html{
     padding:20px;
@@ -296,26 +350,25 @@ a.empty:hover{
     margin:0px;
     min-width:0px;
     padding:0px 20px 200px 20px;
+    display:grid;
+    grid-row-gap:10px;
   }
-  body{
-    grid-template-columns: 150px auto;
-    display:block;
+  .header{
   }
-  .anav,.anavs{
-    color: var(--fontmain);
-    padding-left:1px;
-    padding-right:1px;
-  }
-  .photo{
+  .sectionleft{
     display:none;
   }
-  .photo>img{
-    display:none;
-  }
-  .maincontent{
-    display:block;
+  .sectionright{
     padding-left:0px;
-    padding-top:15px;
+    grid-column: 1/3;
+  }
+  .footer {
+  }
+  .title{
+    font-size:200%;
+  }
+  .subtitle{
+    font-size:120%;
   }
   .section{
     margin-bottom:20px;
@@ -325,12 +378,12 @@ a.empty:hover{
   }
   h1{
     margin-bottom:10px;
+    font-size:120%;
+    background-color:#F1F1F1;
+    padding:3px;
   }
-  .footer > a {
-    display:none;
-  }
-  .footer > a.address, a.github , a.twitter{
-    display:inline-block;
+  .show{
+    display:block;
   }
 }
 
@@ -340,16 +393,27 @@ a.empty:hover{
 
 @media screen and (max-width:550px) {
   *{
-    font-size: 13px;
+    font-size: 15px;
   }
   html{
     padding:10px;
   }
   body{
-    display:block;
+    display:grid;
+    grid-row-gap:10px;
   }
   .header{
     display:block;
+  }
+  .sectionleft{
+    display:none;
+  }
+  .sectionright{
+    grid-column: 1/3;
+  }
+  .footer {
+    padding-top:0px;
+    padding-bottom:0px;
   }
   .title{
     font-size:150%;
@@ -357,27 +421,7 @@ a.empty:hover{
   .subtitle{
     font-size:105%;
   }
-  .nav {
-    padding-top:5px;
-    padding-bottom:5px;
-  }
-  .footer {
-    padding-top:0px;
-    padding-bottom:0px;
-  }
-  .anav,.anavs{
-    padding-left:1px;
-    padding-right:1px;
-  }
-  .photo{
-    display:none;
-  }
-  .photo>img{
-    display:none;
-  }
-  .maincontent{
+  .show{
     display:block;
-    padding-left:0px;
-    padding-top:15px;
   }
 }
