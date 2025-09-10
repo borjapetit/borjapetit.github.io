@@ -40,6 +40,7 @@
   text-decoration: none;
   background-color: inherit;
   -webkit-text-size-adjust: none;
+  cursor: url('../img/iconmain.png'), auto;
 }
 
 /*******************************************************************************
@@ -320,6 +321,7 @@ a.empty::before{
 }
 a.empty:hover{
   cursor:not-allowed;
+  /* cursor: url('../img/iconno.png') 10 10, auto; */
 }
 .calendar::before{
   font-family: "FontAwesome";
