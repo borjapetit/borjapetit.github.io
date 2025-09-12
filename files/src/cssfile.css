@@ -112,6 +112,10 @@ u{
 b{
   font-weight:bold;
 }
+p{
+  margin-top:10px;
+  margin-bottom:10px;
+}
 
 /*******************************************************************************
  STRUCTURE
@@ -183,30 +187,20 @@ b{
   border-radius:0%;
   width:100%;
 }
-/* .photo img{
-  animation: toggle-visibility 4s infinite;
-}
-.photo .pic1 {
-  animation-delay: 0s;
-}
-.photo .pic2 {
-  animation-delay: 2s;
-}
-@keyframes toggle-visibility {
-  0%, 50% { display: block; }
-  50.01%, 100% { display:none; } 
-} */
-
 /* div for research, teaching, etc */
 .section{
   margin-top:0px;
   width:100%;
+  padding-left:5px;
+  padding-right:5px;
 }
 /* div for each item in sections */
 .subsection{
   margin-bottom:15px;
   line-height:1.6;
   width:100%;
+  padding-left:5px;
+  padding-right:5px;
 }
 /* section headings */
 h1{
@@ -239,6 +233,12 @@ h1.sless::before{
 }
 /* paper titles */
 h2{ 
+  color:var(--main);
+  font-size:105%;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+h3{ 
   color:var(--main);
   font-size:inherit;
 }
