@@ -242,6 +242,9 @@ h3{
   color:var(--main);
   font-size:inherit;
 }
+th, td {
+  padding:0px;
+}
 
 /*******************************************************************************
  OTHER ELEMENTS
