@@ -1,5 +1,6 @@
-@import url("http://fonts.googleapis.com/css?family=Helvetica:200,300italic,400,400italic,500,500italic,600,600italic");
-@import url("http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,600,600italic");
+
+@import url("http://fonts.googleapis.com/css?family=Helvetica:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
+@import url("http://fonts.googleapis.com/css?family=Roboto:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
 
 /*******************************************************************************
  DEFINE COLORS
@@ -30,13 +31,13 @@
 
 /* set global parameters */
 *{
-  font-family: 'Roboto','Helvetica',sans-serif,'Source Sans Pro';
+  font-family: 'Roboto','Helvetica','Source Sans Pro',sans-serif;
   margin: 0px;
   padding: 0px;
   line-height: 1.4em;
   color: inherit;
   font-size: inherit; 
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
   background-color: inherit;
   -webkit-text-size-adjust: none;
