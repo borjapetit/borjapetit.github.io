@@ -140,9 +140,9 @@ p{
 
 /* header */
 .header{
-  padding-bottom:15px;
   border-bottom:2px solid var(--main); 
-  margin-bottom:10px;
+  padding:0px 0px 15px 0px;
+  margin-bottom:15px;
 }
 /* title of the website */
 .title{
@@ -298,7 +298,7 @@ a.address::before{
   font-family: "FontAwesome";
   font-size:80%;
   color:var(--main);
-  margin:0px 6px 0px 3px;
+  margin:0px 7px 0px 3px;
   padding:0px;
 }
 a.paper::before{    content: "\f0f6 ";}
