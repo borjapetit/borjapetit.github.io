@@ -90,7 +90,7 @@ p,div{
 }
 a{
   color:var(--link);
-  display:inline-block;
+  display:inline;
 }
 a:hover{
   color:var(--linkhover);
@@ -199,6 +199,10 @@ p{
 .bullet{
   margin-left:20px;
   display:list-item;
+}
+li::marker , .bullet::marker {
+  color: var(--main);
+  color: var(--fontabstract);
 }
 h1{
   margin-bottom:15px;
