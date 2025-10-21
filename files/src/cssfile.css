@@ -49,7 +49,7 @@
 *******************************************************************************/
 
 html{
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 200;
   padding-bottom: 400px;
 }
@@ -90,7 +90,7 @@ p,div{
 }
 a{
   color:var(--link);
-  display:inline-block;
+  display:inline;
 }
 a:hover{
   color:var(--linkhover);
@@ -99,7 +99,7 @@ a:hover{
 ul{
   padding: 7px 0px 0px 30px;
   margin:0px;
-  list-style:circle;
+  list-style: disc;
 }
 li{
   margin-bottom:10px;
@@ -125,13 +125,13 @@ p{
 .header,.footer{
   grid-column: 1/3;
 }
-.sectionleft{
+.left{
   grid-column: 1/1;
 }
-.sectionright{
+.right{
   grid-column: 2/3;
 }
-.sectionwide{
+.wide{
   grid-column: 1/3;
 }
 .show{
@@ -141,7 +141,7 @@ p{
 /* header */
 .header{
   border-bottom:2px solid var(--main); 
-  padding:0px 0px 15px 0px;
+  padding-bottom:15px;
   margin-bottom:15px;
 }
 /* title of the website */
@@ -168,8 +168,6 @@ p{
 /* picture */
 .photo{
   width:100%;
-  margin:0px;
-  padding:0px;
 }
 .photo:hover img.pic1,.photo img.pic2{
   display:none;
@@ -190,47 +188,28 @@ p{
 }
 /* div for research, teaching, etc */
 .section{
-  margin-top:0px;
   width:100%;
-  padding-left:5px;
-  padding-right:5px;
 }
 /* div for each item in sections */
 .subsection{
-  margin-bottom:15px;
-  line-height:1.6;
   width:100%;
-  padding-left:5px;
-  padding-right:5px;
+  line-height:1.6;
+  margin-bottom:5px;
 }
-/* section headings */
+.bullet{
+  margin-left:20px;
+  display:list-item;
+}
+li::marker , .bullet::marker {
+  color: var(--main);
+  color: var(--fontabstract);
+}
 h1{
+  margin-bottom:15px;
+  padding-bottom:3px;
   color:var(--main);
   font-size:125%;
-  margin-bottom:15px;
-  margin-top:0px;
-  background-color:#F1F1F1;
-  padding:5px;
-}
-h1.smore::before,
-h1.sless::before{
-  font-family: "FontAwesome";
-  font-size:80%;
-  color:var(--main);
-  margin:0px 6px 0px 3px;
-  padding:0px;
-}
-h1.smore,h1.sless{
-  width:100%;
-}
-h1.smore,h1.sless{
-  cursor:pointer;
-}
-h1.smore::before{
-  content: "\f196 ";
-}
-h1.sless::before{
-  content: "\f147 ";
+  border-bottom:1px solid var(--main);
 }
 /* paper titles */
 h2{ 
@@ -242,9 +221,6 @@ h2{
 h3{ 
   color:var(--main);
   font-size:inherit;
-}
-th, td {
-  padding:0px;
 }
 
 /*******************************************************************************
@@ -331,8 +307,7 @@ a.empty:hover{
   font-family: "FontAwesome";
   font-size:100%;
   color:var(--main);
-  margin:0px 10px 0px 0px;
-  padding:0px;
+  margin-right:10px;
   line-height: 1em;
   content: "\f073 "; 
 }
@@ -361,10 +336,10 @@ a.empty:hover{
   }
   .header{
   }
-  .sectionleft{
+  .left{
     display:none;
   }
-  .sectionright{
+  .right{
     padding-left:0px;
     grid-column: 1/3;
   }
@@ -375,18 +350,24 @@ a.empty:hover{
   }
   .subtitle{
     font-size:120%;
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--main);
   }
   .section{
-    margin-bottom:20px;
+    margin:0px;
+    margin-bottom:10px;
   }
   .subsection{
+    margin:0px;
     margin-bottom:10px;
   }
+  .bullet{
+    margin-left:20px;
+  }
   h1{
+    margin:0px;
     margin-bottom:10px;
     font-size:120%;
-    background-color:#F1F1F1;
-    padding:3px;
   }
   .show{
     display:block;
@@ -410,16 +391,16 @@ a.empty:hover{
   }
   .header{
     display:block;
+    margin-bottom : 10px;
   }
-  .sectionleft{
+  .left{
     display:none;
   }
-  .sectionright{
+  .right{
     grid-column: 1/3;
   }
   .footer {
-    padding-top:0px;
-    padding-bottom:0px;
+    padding:0px;
   }
   .title{
     font-size:150%;
@@ -431,3 +412,25 @@ a.empty:hover{
     display:block;
   }
 }
+
+
+/* h1.smore::before,
+h1.sless::before{
+  font-family: "FontAwesome";
+  font-size:80%;
+  color:var(--main);
+  margin:0px 6px 0px 3px;
+  padding:0px;
+}
+h1.smore,h1.sless{
+  width:100%;
+}
+h1.smore,h1.sless{
+  cursor:pointer;
+}
+h1.smore::before{
+  content: "\f196 ";
+}
+h1.sless::before{
+  content: "\f147 ";
+} */

@@ -23,8 +23,8 @@ The basic structure of the website is:
         </div>
     </div>
 
-    <!-- this container has width of 200px -->
-    <div class="sectionleft">
+    <!-- this container has width of 200px and dissapears when window width is < 1000px -->
+    <div class="section left">
         <!-- add your picture -->
         <img class="pic" src="files/img/foto.jpeg">
         <div class="subsection">
@@ -33,7 +33,7 @@ The basic structure of the website is:
     </div>
 
     <!-- this container is full-width minus 200px -->
-    <div class="sectionrigth">
+    <div class="section rigth">
         <!-- add your content in "section" containers -->
         <div class="section">
             <h1>Section header<h1>
@@ -47,7 +47,7 @@ The basic structure of the website is:
     </div>
 
     <!-- this container is full-width -->
-    <div class="sectionwide">
+    <div class="section wide">
         <!-- add your content in "section" containers -->
         <div class="section">
             <h1>Section header<h1>
