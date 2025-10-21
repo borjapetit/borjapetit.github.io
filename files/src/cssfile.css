@@ -350,6 +350,8 @@ a.empty:hover{
   }
   .subtitle{
     font-size:120%;
+  }
+  div.subtitle{
     padding-bottom: 3px;
     border-bottom: 2px solid var(--main);
   }
