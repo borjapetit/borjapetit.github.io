@@ -16,7 +16,7 @@ $('a[id=jc]'           ).attr('href','https://jcruizgarcia.com/');
 $('a[id=javi]'         ).attr('href','https://sites.google.com/view/javierlopezsegovia/home?authuser=0');
 $('a[id=enriquemoral]' ).attr('href','https://moralbenito.weebly.com/');
 $('a[id=tonibraun]'    ).attr('href','https://sites.google.com/view/rantonbraun/home');
-$('a[id=juanfranjim]'  ).attr('href','https://www.bde.es/investigador/en/menu/people/research_staff_a/Jimeno_Serrano__Juan_Francisco.html');
+$('a[id=juanfranjim]'  ).attr('href','https://www.bde.es/wbe/es/areas-actuacion/analisis-e-investigacion/investigadores/investigadores-orden-alfabetico/Jimeno_Serrano__Juan_Francisco.html');
 $('a[id=davidlopez]'   ).attr('href','https://sites.google.com/site/davidlopezrodriguezphd/');
 $('a[id=almunia]'      ).attr('href','https://malmunia.github.io/');
 
