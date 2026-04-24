@@ -49,9 +49,11 @@
 *******************************************************************************/
 
 html{
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 200;
-  /* padding-bottom: 400px; */
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color:#f8f8f8;
 }
 body{
   /* width: 90%; */
@@ -59,9 +61,12 @@ body{
   max-width:1000px;
   color:var(--fontmain);
   background-color:white;
+  border: 1px solid gray;
+  border-radius: 12px;
   margin:0px auto auto auto;
-  padding:20px;
-  /* padding-bottom:100px; */
+  padding:60px;
+  padding-top:0px;
+  padding-bottom:20px;
   display:grid;
   grid-template-columns: 200px auto;
   grid-column-gap:40px;
@@ -137,7 +142,6 @@ p{
 .show{
   display:none;
 }
-
 /* header */
 .header{
   border-bottom:2px solid var(--main); 
@@ -149,6 +153,7 @@ p{
   color:var(--main);
   text-align:left;
   font-size:250%;
+  font-weight:bold;
 }
 /* subtitle of the website */
 .subtitle{
@@ -194,7 +199,7 @@ p{
 .subsection{
   width:100%;
   line-height:1.6;
-  margin-bottom:15px;
+  margin-bottom:20px;
 }
 .bullet{
   margin-left:20px;
@@ -207,10 +212,10 @@ li::marker , .bullet::marker {
 }
 h1{
   margin-bottom:20px;
-  padding-bottom:3px;
-  color:var(--main);
-  font-size:125%;
-  border-bottom:1px solid var(--main);
+  color:gray ; /*var(--main);*/
+  font-size:150%;
+  border-bottom:0px solid var(--main);
+  font-weight:bold; 
 }
 /* paper titles */
 h2{ 
@@ -232,9 +237,22 @@ h3{
 paper{
   color:var(--main);
   font-size:inherit;
+  display:block;
+  padding-top:2px;
+  padding-bottom:2px;
 }
 paper::before{ content: open-quote;}
 paper::after{ content: close-quote;}
+
+author{
+  font-size:95%;
+  padding-top:2px;
+  padding-bottom:2px;
+  font-style:italic;
+  display:block;
+}
+author::before{content: "(joint with ";}
+author::after{content: ")";}
 
 /* for journals */
 journal{
@@ -310,9 +328,24 @@ a.empty:hover{
   line-height: 1em;
   content: "\f073 "; 
 }
-
-
-
+.btn {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 4px;
+  margin-top: 6px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
 
 
 /*******************************************************************************
@@ -360,7 +393,7 @@ a.empty:hover{
   }
   .subsection{
     margin:0px;
-    margin-bottom:10px;
+    margin-bottom:15px;
   }
   .bullet{
     margin-left:20px;
