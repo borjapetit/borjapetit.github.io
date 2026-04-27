@@ -37,22 +37,22 @@ $('a[class=title]'     ).attr('target','_self');
 
 $(document).on("click", "h1.more", function(event){
   event.preventDefault();
-  $(this).attr('class', 'less');
+  $(this).removeClass('more').addClass('less');
 });
 
 $(document).on("click", "h1.less", function(event){
   event.preventDefault();
-  $(this).attr('class', 'more');
+  $(this).removeClass('less').addClass('more');
 });
 
 $(document).on("click", "a.more", function(event){
   event.preventDefault();
-  $(this).attr('class', 'less');
+  $(this).removeClass('more').addClass('less');
 });
 
 $(document).on("click", "a.less", function(event){
   event.preventDefault();
-  $(this).attr('class', 'more');
+  $(this).removeClass('less').addClass('more');
 });
 
 function showhide(xx) {
