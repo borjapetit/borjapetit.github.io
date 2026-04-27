@@ -217,14 +217,12 @@ paper::after{
 /* for journals */
 journal{
   font-size:95%;
-  padding:0px 0px;
   font-style: italic;
   display:block;
 }
 /* for authors */
 author{
   font-size:95%;
-  padding:0px 0;
   font-style:italic;
   display:block;
 }
@@ -234,13 +232,11 @@ author::before{
 author::after{
   content: ")";
 }
-/* for abstracts and links */
 botones {
   display:block;
-  padding:2px 0px 4px 0px;
+  padding:2px 0 4px 0;
 }
 .abstract{
-  /* width:94%; */
   font-size: 95%;
   line-height: 1.25em;
   text-align:justify;
