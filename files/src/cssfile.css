@@ -27,13 +27,13 @@
 
 /* set global parameters */
 *{
-  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
-  line-height: 1.55em;
+  line-height: 1.5em;
   color: inherit;
   font-size: inherit; 
-  font-weight: 200;
+  font-weight: 400;
   text-decoration: none;
   background-color: inherit;
   -webkit-text-size-adjust: none;
@@ -44,7 +44,7 @@
 *******************************************************************************/
 
 html{
-  font-size: 16px;
+  font-size: 17px;
   padding-top: 30px;
   padding-bottom: 60px;
   background-color: #f6f6f6;
@@ -130,9 +130,7 @@ red{
 .section{
   width:100%;
   margin:5px 0px;
-}
-.subsection{
-  
+  margin-bottom:20px
 }
 .bullet{
   margin-left:20px;
@@ -152,7 +150,6 @@ li::marker , .bullet::marker {
 .title{
   color:var(--main);
   font-size:250%;
-  font-weight:400;
 }
 /* subtitle of the website */
 .subtitle{
@@ -162,22 +159,17 @@ li::marker , .bullet::marker {
 /* headings */
 h1{
   margin-bottom:10px;
-  color:gray ; /*var(--main);*/
-  font-size:150%;
-  font-weight:400; 
-  padding: 4px 7px 0px 7px;
-  margin-left:-10px;
+  color:var(--main) ; 
+  font-size:150%; 
 }
 h2{ 
   color:var(--main);
   font-size:110%;
   margin-top:28px;
   margin-bottom:14px;
-  font-weight: 500;
 }
 h3{ 
   color:var(--main);
-  font-weight: 500;
 }
 
 /*******************************************************************************
@@ -215,7 +207,6 @@ paper{
   font-size:inherit;
   display:block;
   padding:2px 0px;
-  font-weight:300;
 }
 paper::before{
   content: open-quote;
@@ -351,8 +342,8 @@ a.empty:hover{
     padding-bottom: 3px;
     border-bottom: 2px solid var(--main);
   }
-  .section , .subsection , h1{
-    margin:0 0 10px 0;
+  .section {
+    margin:20px 0 15px 0;
   }
   .bullet{
     margin-left:20px;
@@ -376,18 +367,18 @@ a.empty:hover{
   *{
     font-size: 14px;
   }
-paper,journal,author{
-  display:inline;
-  font-size:100%;
-  font-style:none;
-}
-paper::after{
-  content: close-quote", "; 
-}
-botones{
-  padding:5px 0px;
-}
-a.code{
-  display:none;
-}
+  paper,journal,author{
+    display:inline;
+    font-size:100%;
+    font-style:none;
+  }
+  paper::after{
+    content: close-quote", "; 
+  }
+  botones{
+    padding:5px 0px;
+  }
+  a.code{
+    display:none;
+  }
 }
