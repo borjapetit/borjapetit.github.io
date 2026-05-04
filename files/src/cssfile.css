@@ -245,8 +245,8 @@ author::after{
 
 .btn {
   display: inline-block;
-  padding: 1px 4px;
-  /* margin: 0 4px 0 0; */
+  padding: 2px 5px;
+  margin: 0 4px 0 0;
   font-size: 75%;
   text-decoration: none;
   color: #333;
