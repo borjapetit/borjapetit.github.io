@@ -1,275 +1,295 @@
 
-<html>
+<html lang="en">
   
 <head>
-  <title>Borja Petit - Home</title>
-  <meta name="author" content="Borja Petit">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Style script -->
-  <link rel="stylesheet" type="text/css" href="files/src/cssfile.css">
-  <!-- Import the font awesome (symbols) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Google fonts -->
+  <meta name="author" content="Borja Petit">
+  <meta name="description" content="Borja Petit – Assistant Professor of Economics at CUNEF Universidad. Research on intergenerational mobility, family economics, and aggregate productivity.">
+  <title>Borja Petit</title>
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <!-- Load code for java-script -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="files/src/cssfile.css">
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- This is for Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36602309-3"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-36602309-3');</script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-36602309-3');</script>
 </head>
 
-<body><br>
+<body>
 
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- PICTURE -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  
-  <div class="section left hidephone">
-    <div class="photo">
-      <img class="pic pic1" src="files/img/foto.jpg" alt="Borja Petit">
-      <img class="pic pic2" src="files/img/foto2.jpg" alt="Borja Petit">
-    </div>
+<!-- ================================================================ -->
+<!-- PHOTO                                                             -->
+<!-- ================================================================ -->
+
+<div class="section left">
+  <div class="photo">
+    <img class="pic1" src="files/img/foto.jpg" alt="Borja Petit">
+    <img class="pic2" src="files/img/foto2.jpg" alt="Borja Petit">
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ABOUT                                                             -->
+<!-- ================================================================ -->
+
+<div class="section right">
+
+  <div class="site-name">Borja Petit</div>
+  <div class="site-subtitle">Assistant Professor of Economics &middot; CUNEF Universidad</div>
+
+  <p class="bio">
+    My research combines microdata with structural macroeconomic models to study questions
+    on intergenerational mobility, family economics, and aggregate productivity.
+  </p>
+  <p class="bio">
+    I hold a PhD from <a href="https://www.cemfi.es/">CEMFI</a> (2019) and joined
+    <a href="https://www.cunef.edu/en/">CUNEF Universidad</a> in 2020.
+  </p>
+
+  <div class="contact-links">
+    <a class="contact-link cv"      href="files/borjapetit_cv.pdf">C. Vitae</a>
+    <a class="contact-link email"   href="mailto:bpetit@cunef.edu">bpetit [at] cunef.edu</a>
+    <a class="contact-link github"  href="https://github.com/borjapetit">Github</a>
+    <a class="contact-link scholar" href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es">Google Scholar</a>
   </div>
 
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- ABOUT -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+</div>
 
-  <div class="section right">
-    <!-- page title and subtitle --> 
-    <div class="subsection" style="margin-bottom:15px">
-      <div class="title" style="text-align:left;">
-        Borja Petit
+<!-- ================================================================ -->
+<!-- PUBLICATIONS                                                      -->
+<!-- ================================================================ -->
+
+<div class="section wide">
+
+  <h1>Publications</h1>
+
+  <div class="paper-list">
+
+    <div class="paper-item">
+      <div class="paper-title">Aggregate effects of firing costs with endogenous firm productivity growth</div>
+      <div class="paper-journal">
+        <span class="red">Macroeconomic Dynamics</span>, Volume 27, Issue 4, June 2023, pp. 945&ndash;965
+      </div>
+      <div class="paper-links">
+        <a class="btn more" onclick="showhide('absfiring')">Abstract</a>
+        <a class="btn pdf"    href="https://doi.org/10.1017/S1365100522000049">Published article</a>
+        <a class="btn paper"  href="files/papers/petit_firing.pdf">Working paper</a>
+        <a class="btn slides" href="files/slides/petit_firingcost_slides.pdf">Slides</a>
+        <a class="btn code"   href="https://github.com/borjapetit/firingcosts_petit2021">Codes</a>
+      </div>
+      <div id="absfiring" class="abstract" style="display:none">
+        This paper quantifies the aggregate effects of firing costs in a model of firm dynamics where firm-level productivity is determined by innovation. In the model, the productivity distribution is endogenous, and thus, potentially affected by policy changes, allowing the model to capture both the static (allocative efficiency) and dynamic effects (changes in the distribution of firms' productivity) of firing costs. The model is calibrated to match key features of firms' hiring and firing behavior using firm-level data from Spanish non-financial firms. I show that firing costs equivalent to 2.5 monthly wages produce a 4% loss in aggregate productivity relative to the frictionless economy. The aggregate productivity losses rise to more than 10% when firing costs are equivalent to one year's wage. I show that a model with a standard AR(1) productivity process can only generate between 45 and 50% of these productivity losses. Overall, the results suggest that ignoring the effects of frictions on the dynamics of firms' productivity can substantially underestimate their aggregate effects.
       </div>
     </div>
-    <!-- short bio -->
-    <div class="subsection" style="margin-bottom:10px;">
-      I am an Assistant Professor of Economics at <a href="https://www.cunef.edu/en/">CUNEF Universidad</a>, since 2020. 
-      My research combines microdata with structural macroeconomic models to study questions on intergenerational mobility, family economics, and aggregate productivity. 
-      I hold a PhD from <a href="https://www.cemfi.es/">CEMFI</a> (2019).
-    </div>
-    <p><color><a class="pdf" href="files/borjapetit_cv.pdf"> Curriculum vitae</a><br></p>
-    <p><color><a class="address" href="mailto:bpetit@cunef.edu"> bpetit [at] cunef.edu</a></p>
-    <p><color><a class="github hidephone" href="https://github.com/borjapetit"> Github</a></p>
-    <p><color><a class="google hidephone" href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es"> Google scholar</a></p>
-    <!-- <div class="subsection" style="margin-top:15px;">
-      <p><a class="btn pdf" href="files/borjapetit_cv.pdf">Curriculum vitae</a></p>
-      <p><a class="btn address" href="mailto:bpetit@cunef.edu"> bpetit [at] cunef.edu</a></p>
-      <p><a class="btn github hidephone" href="https://github.com/borjapetit">Github</a></p>
-      <p><a class="btn google hidephone" href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es">Google scholar</a></p>
-    </div> -->
-  </div>
 
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- PUBLICATIONS -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-
-
-  <div class="section wide">
-    
-    <h1>Publications</h1>
-    
-    <div class="bullet subsection">
-        <paper>Aggregate effects of firing costs with endogenous firm productivity growth</paper>
-        <journal><red>Macroeconomic Dynamics</red>, Volume 27, Issue 4, June 2023, 945–965.</journal>
-        <botones>
-          <a class="btn more" onclick="showhide('absfiring')">Abstract</a>
-          <a class="btn pdf" href="https://doi.org/10.1017/S1365100522000049">Published article</a>
-          <a class="btn paper" href="files/papers/petit_firing.pdf">Working paper</a>
-          <a class="btn slides" href="files/slides/petit_firingcost_slides.pdf">Slides</a>
-          <a class="btn code" href="https://github.com/borjapetit/firingcosts_petit2021">Codes</a>
-          <p id="absfiring" class="abstract" style="display:none">
-            This paper quantifies the aggregate effects of firing costs in a model of firm dynamics where firm-level productivity is determined by innovation. In the model, the productivity distribution is endogenous, and thus, potentially affected by policy changes, allowing the model to capture both the static (allocative efficiency) and dynamic effects (changes in the distribution of firms' productivity) of firing costs. The model is calibrated to match key features of firms' hiring and firing behavior using firm-level data from Spanish non-financial firms. I show that firing costs equivalent to 2.5 monthly wages produce a 4% loss in aggregate productivity relative to the frictionless economy. The aggregate productivity losses rise to more than 10% when firing costs are equivalent to one year's wage. I show that a model with a standard AR(1) productivity process can only generate between 45 and 50% of these productivity losses. Overall, the results suggest that ignoring the effects of frictions on the dynamics of firms' productivity can substantially underestimate their aggregate effects.
-          </p>
-        </botones>
-    </div>
-    
-    <div class="bullet subsection">
-        <paper>Flattening of the Phillips curve with state-dependent prices and wages</paper>
-        <journal><red>The Economic Journal</red>, Volume 132, No. 642, February 2022, 546-581.</journal>
-        <author><a id="jim">J. Costain</a> and <a id="anton">A. Nakov</a></author>
-        <botones>
-          <a class="btn more" onclick="showhide('absflattening')">Abstract</a>
-          <a class="btn pdf" href="https://doi.org/10.1093/ej/ueab063">Published article</a>
-          <a class="btn paper" href="files/papers/costain-nakov-petit.pdf">Working paper</a>
-          <a class="btn slides" href="files/slides/costainnakovpetit_slides_0221.pdf">Slides</a>
-          <a class="btn code" href="https://github.com/borjapetit/costainnakovpetit2021">Codes</a>
-          <p id="absflattening" class="abstract" style="display:none">
-            We study monetary transmission in a model of state-dependent prices and wages based on "control costs". Stickiness arises because precise choice is costly: decision-makers tolerate errors both in the timing of adjustments, and in the new level at which the price or wage is set. The model is calibrated to microdata on the size and frequency of price and wage changes. In our simulations, money shocks have less persistent real effects than in the Calvo framework; nonetheless, the model exhibits a substantial degree of non-neutrality, driven mainly by wage rigidity. State-dependent nominal stickiness implies a flatter Phillips curve as trend inflation declines, because price and wage adjustments become less frequent, making short-run inflation less reactive to shocks. Our model can explain almost half of the observed decline in the slope of the Phillips curve since 2000.
-          </p>
-        </botones>
+    <div class="paper-item">
+      <div class="paper-title">Flattening of the Phillips curve with state-dependent prices and wages</div>
+      <div class="paper-journal">
+        <span class="red">The Economic Journal</span>, Volume 132, No. 642, February 2022, pp. 546&ndash;581
+      </div>
+      <div class="paper-authors">with <a id="jim">J. Costain</a> and <a id="anton">A. Nakov</a></div>
+      <div class="paper-links">
+        <a class="btn more"   onclick="showhide('absflattening')">Abstract</a>
+        <a class="btn pdf"    href="https://doi.org/10.1093/ej/ueab063">Published article</a>
+        <a class="btn paper"  href="files/papers/costain-nakov-petit.pdf">Working paper</a>
+        <a class="btn slides" href="files/slides/costainnakovpetit_slides_0221.pdf">Slides</a>
+        <a class="btn code"   href="https://github.com/borjapetit/costainnakovpetit2021">Codes</a>
+      </div>
+      <div id="absflattening" class="abstract" style="display:none">
+        We study monetary transmission in a model of state-dependent prices and wages based on &ldquo;control costs&rdquo;. Stickiness arises because precise choice is costly: decision-makers tolerate errors both in the timing of adjustments, and in the new level at which the price or wage is set. The model is calibrated to microdata on the size and frequency of price and wage changes. In our simulations, money shocks have less persistent real effects than in the Calvo framework; nonetheless, the model exhibits a substantial degree of non-neutrality, driven mainly by wage rigidity. State-dependent nominal stickiness implies a flatter Phillips curve as trend inflation declines, because price and wage adjustments become less frequent, making short-run inflation less reactive to shocks. Our model can explain almost half of the observed decline in the slope of the Phillips curve since 2000.
+      </div>
     </div>
 
   </div>
 
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- WORKING PAPERS -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+</div>
 
-  <div class="section wide">  
-    
-    <h1>Working papers & work in progress</h1>
-    
-    <div class="bullet subsection">
-        <paper>Firm entry and the TFP paradox of productivity-dependent distortions</paper>
-        <journal><red>Submmitted</red></journal>
-        <author><a id="almunia">M. Almunia</a>, <a id="juanfranjim">J.F. Jimeno</a> and <a id="davidlopez">D. López-Rodriguez</a></author>
-        <botones>
-          <a class="btn more" onclick="showhide('abstfpparadox')">Abstract</a>
-          <a class="btn pdf empty" >Published article</a>
-          <a class="btn paper" href="files/papers/2026_tfpparadox.pdf">Working paper</a>
-          <a class="btn slides empty" >Slides</a>
-          <a class="btn code" href="https://github.com/borjapetit/2026_tfpparadox">Codes</a>
-          <p id="abstfpparadox" class="abstract" style="display:none">
-            In economies with heterogeneous firms, distortions correlated with firm productivity can raise aggregate total factor productivity (TFP) even as they worsen the allocation of inputs and the productivity distribution. This productivity paradox arises when distortions sufficiently stimulate firm entry: under decreasing returns to scale, expanded entry raises aggregate TFP by increasing the mass of productive firms. We quantitatively illustrate this mechanism using a model calibrated to Spanish firm-level data, considering two canonical firm-dynamics frameworks: free entry à la Hopenhayn (1992) and occupational choice à la Lucas (1978).
-          </p>
-        </botones>
+<!-- ================================================================ -->
+<!-- WORKING PAPERS                                                    -->
+<!-- ================================================================ -->
+
+<div class="section wide">
+
+  <h1>Working Papers &amp; Work in Progress</h1>
+
+  <div class="paper-list">
+
+    <div class="paper-item">
+      <div class="paper-title">Firm entry and the TFP paradox of productivity-dependent distortions</div>
+      <div class="paper-authors">
+        with <a id="almunia">M. Almunia</a>, <a id="juanfranjim">J.F. Jimeno</a>
+        and <a id="davidlopez">D. L&oacute;pez-Rodriguez</a>
+      </div>
+      <div class="paper-links">
+        <a class="btn more" onclick="showhide('abstfpparadox')">Abstract</a>
+        <a class="btn pdf empty" >Published article</a>
+        <a class="btn paper" href="files/papers/2026_tfpparadox.pdf">Working paper</a>
+        <a class="btn slides empty" >Slides</a>
+        <a class="btn code" href="https://github.com/borjapetit/2026_tfpparadox">Codes</a>
+      </div>
+      <div id="abstfpparadox" class="abstract" style="display:none">
+        In economies with heterogeneous firms, distortions correlated with firm productivity can raise aggregate total factor productivity (TFP) even as they worsen the allocation of inputs and the productivity distribution. This productivity paradox arises when distortions sufficiently stimulate firm entry: under decreasing returns to scale, expanded entry raises aggregate TFP by increasing the mass of productive firms. We quantitatively illustrate this mechanism using a model calibrated to Spanish firm-level data, considering two canonical firm-dynamics frameworks: free entry &agrave; la Hopenhayn (1992) and occupational choice &agrave; la Lucas (1978).
+      </div>
     </div>
 
-    <div class="bullet subsection">
-        <paper>Intergenerational persistence in welfare program participation</paper>
-        <author><a id="javi">J. López Segovia</a></author>
-        <botones>
-          <a class="btn more" onclick="showhide('abswelfare')">Abstract</a>
-          <a class="btn pdf empty">Published article</a>
-          <a class="btn paper empty">Working paper</a>
-          <a class="btn slides" href="files/slides/lopezsegoviapetit_2024.pdf" >Slides</a>
-          <a class="btn code empty">Codes</a>
-          <p id="abswelfare" class="abstract" style="display:none">
-            Participation in social insurance (welfare) programs exhibits a significant persistence across generations. Children of welfare program participants are more likely to participate in these programs when they become adults, even after controlling for their income. This suggests some persistence in the underlying factors that affect the participation decisions of eligible households. To understand the source of this persistence and its implications on households and their children, we build a quantitative model with overlapping generations, heterogeneous agents, incomplete markets and child skill formation. In the model, participating in welfare programs entails a utility cost that that id correlated across generations. the model assumes paternalistic preferences, which makes parents with high participation cost to suffer a utility loss in case their children decide to participare. We calibrate the model to US datanad use our calibrated model to study the implications of welfare culture. We find that persistence in preferences towards welfare participation explains around 40% of the intergenerational persistence in welfare participation and 10% of the intergenerational persistence of skills.
-          </p>
-        </botones>
+    <div class="paper-item">
+      <div class="paper-title">Intergenerational persistence in welfare program participation</div>
+      <div class="paper-authors">with <a id="javi">J. L&oacute;pez Segovia</a></div>
+      <div class="paper-links">
+        <a class="btn more" onclick="showhide('abswelfare')">Abstract</a>
+        <a class="btn pdf empty">Published article</a>
+        <a class="btn paper empty">Working paper</a>
+        <a class="btn slides" href="files/slides/2024_welfarepersistence.pdf">Slides</a>
+        <a class="btn code empty">Codes</a>
+      </div>
+      <div id="abswelfare" class="abstract" style="display:none">
+        Participation in social insurance (welfare) programs exhibits a significant persistence across generations. Children of welfare program participants are more likely to participate in these programs when they become adults, even after controlling for their income. This suggests some persistence in the underlying factors that affect the participation decisions of eligible households. To understand the source of this persistence and its implications on households and their children, we build a quantitative model with overlapping generations, heterogeneous agents, incomplete markets and child skill formation. In the model, participating in welfare programs entails a utility cost that is correlated across generations. The model assumes paternalistic preferences, which makes parents with high participation cost suffer a utility loss in case their children decide to participate. We calibrate the model to US data and use our calibrated model to study the implications of welfare culture. We find that persistence in preferences towards welfare participation explains around 40% of the intergenerational persistence inwelfare participation and 10% of the intergenerational persistence of skills.
+      </div>
     </div>
 
-    <div class="bullet subsection">
-        <paper>Size-dependent regulations in Spain</paper>
-        <author><a id="almunia">M. Almunia</a>, <a id="juanfranjim">J.F. Jimeno</a>, and <a id="davidlopez">D. López-Rodriguez</a></author>
-        <botones>
-          <a class="btn more" onclick="showhide('abssizedependent')">Abstract</a>
-          <a class="btn pdf empty">Published article</a>
-          <a class="btn paper empty">Working paper</a>
-          <a class="btn slides empty">Slides</a>
-          <a class="btn code empty">Codes</a>
-          <p id="abssizedependent" class="abstract" style="display:none">
-            This paper studies the interaction effects of multiple size-dependent regulations. Using administrative data for Spanish businesses in the period 2014-19, we investigate the impact of more stringent labor regulations imposed on firms with over 50 employees and of stricter tax monitoring on firms with annual operating revenue exceeding €6 million. We find that firms bunch below each of these cutoffs, especially those that are also subject to the other regulation, suggesting an interaction effect between the two policies. We specify a model of firm dynamics that replicates the patterns observed in the data and we use the model to quantify the aggregate effects of alternative policies that either eliminate each regulation or generalize them to all firms. We find that regulations lead to lower aggregate output and increase the relative weight of small firms in terms of employment and revenues. However, regulations have a positive effect on aggregate TFP compared to an economy without regulations where firms can misreport their revenues. This is because the possibility of misreporting creates a tax wedge, pushing firms' input demand above the optimum level.
-          </p>
-        </botones>
+    <div class="paper-item">
+      <div class="paper-title">Size-dependent regulations in Spain</div>
+      <div class="paper-authors">
+        with <a id="almunia">M. Almunia</a>, <a id="juanfranjim">J.F. Jimeno</a> and <a id="davidlopez">D. L&oacute;pez-Rodriguez</a>
+      </div>
+      <div class="paper-links">
+        <a class="btn more" onclick="showhide('abssizedependent')">Abstract</a>
+        <a class="btn pdf empty">Published article</a>
+        <a class="btn paper empty">Working paper</a>
+        <a class="btn slides empty">Slides</a>
+        <a class="btn code empty">Codes</a>
+      </div>
+      <div id="abssizedependent" class="abstract" style="display:none">
+        This paper studies the interaction effects of multiple size-dependent regulations. Using administrative data for Spanish businesses in the period 2014&ndash;19, we investigate the impact of more stringent labor regulations imposed on firms with over 50 employees and of stricter tax monitoring on firms with annual operating revenue exceeding &euro;6 million. We find that firms bunch below each of these cutoffs, especially those that are also subject to the other regulation, suggesting an interaction effect between the two policies. We specify a model of firm dynamics that replicates the patterns observed in the data and we use the model to quantify the aggregate effects of alternative policies that either eliminate each regulation or generalize them to all firms. We find that regulations lead to lower aggregate output and increase the relative weight of small firms in terms of employment and revenues. However, regulations have a positive effect on aggregate TFP compared to an economy without regulations where firms can misreport their revenues. This is because the possibility of misreporting creates a tax wedge, pushing firms&rsquo; input demand above the optimum level.
+      </div>
     </div>
 
-    <div class="bullet subsection">
-        <paper>Intergenerational effects of child-related tax benefits in the US</paper>
-        <botones>
-          <a class="btn more" onclick="showhide('abschildtax')">Abstract</a>
-          <a class="btn pdf empty">Published article</a>
-          <a class="btn paper" href="files/papers/petit_childtax.pdf">Working paper</a>
-          <a class="btn slides" href="files/slides/childtax_slides_cunef0920.pdf">Slides</a>
-          <a class="btn code empty">Codes</a>
-          <p id="abschildtax" class="abstract typing-text" style="display:none">
-            The presence of children in US households reduces tax liabilities through deductions and tax credits. Through the lens of the quantity-quality trade-off, these benefits distort parental choices over the number and human capital of children by altering their relative implicit price. This paper quantifies the effects of child-related tax benefits on fertility and intergenerational mobility using a general equilibrium life-cycle model with endogenous fertility choices and parental investments in children's human capital, calibrated to US data. I show that tax benefits increase fertility by 16%, but they do so at the expense of lowering human capital of children. More importantly, these effects are particularly strong among low educated mothers, which widens the gap in human capital between children of low and high educated mothers. As a result, the intergenerational persistence of education increases by 37% when tax benefits are introduced. I also show that education subsidies are also effective at fostering fertility but, as opposed to tax benefits, they do not decrease children's human capital, nor intergenerational mobility.
-          </p>
-        </botones>
+    <div class="paper-item">
+      <div class="paper-title">Intergenerational effects of child-related tax benefits in the US</div>
+      <div class="paper-links">
+        <a class="btn more" onclick="showhide('abschildtax')">Abstract</a>
+        <a class="btn pdf empty">Published article</a>
+        <a class="btn paper" href="files/papers/petit_childtax.pdf">Working paper</a>
+        <a class="btn slides" href="files/slides/childtax_slides_cunef0920.pdf">Slides</a>
+        <a class="btn code empty">Codes</a>
+      </div>
+      <div id="abschildtax" class="abstract" style="display:none">
+        The presence of children in US households reduces tax liabilities through deductions and tax credits. Through the lens of the quantity-quality trade-off, these benefits distort parental choices over the number and human capital of children by altering their relative implicit price. This paper quantifies the effects of child-related tax benefits on fertility and intergenerational mobility using a general equilibrium life-cycle model with endogenous fertility choices and parental investments in children's human capital, calibrated to US data. I show that tax benefits increase fertility by 16%, but they do so at the expense of lowering human capital of children. More importantly, these effects are particularly strong among low educated mothers, which widens the gap in human capital between children of low and high educated mothers. As a result, the intergenerational persistence of education increases by 37% when tax benefits are introduced. I also show that education subsidies are also effective at fostering fertility but, as opposed to tax benefits, they do not decrease children's human capital, nor intergenerational mobility.
+      </div>
     </div>
 
-    <div class="bullet subsection">
-        <paper>Age-dependent taxes and firm entry</paper>
-        <author><a id="almunia">M. Almunia</a>, <a id="juanfranjim">J.F. Jimeno</a> and <a id="davidlopez">D. López-Rodriguez</a></author>
-        <botones>
-          <a class="btn more" onclick="showhide('absagetaxes')">Abstract</a>
-          <a class="btn pdf empty" >Published article</a>
-          <a class="btn paper empty" href="files/papers/2026_tfpparadox.pdf">Working paper</a>
-          <a class="btn slides empty" >Slides</a>
-          <a class="btn code empty" href="https://github.com/borjapetit/2026_tfpparadox">Codes</a>
-          <p id="absagetaxes" class="abstract" style="display:none">
-            Profit taxes reduce the value of running a firm, thus distorting firm entry. As a result, the equilibrium mass of firms is inefficiently low. We study whether making the tax rate depend on firm age can reduce this distortion. In a model of firm dynamics with entry and exit, a revenue-neutral shift of the tax burden from young to old firms raises the value of entry, because entrants discount the taxes they will pay later in life while the government collects from all cohorts at the same time. The higher value of entry raises the equilibrium wage, the productivity-weighted mass of firms and aggregate output. We calibrate the model to the size and age distribution of firms and compute the revenue-neutral, age-monotone tax schedule that maximizes output and welfare.
-          </p>
-        </botones>
+    <div class="paper-item">
+      <div class="paper-title">Age-dependent taxes and firm entry</div>
+      <div class="paper-authors">
+        with <a id="almunia">M. Almunia</a>, <a id="juanfranjim">J.F. Jimeno</a> and <a id="davidlopez">D. L&oacute;pez-Rodriguez</a>
+      </div>
+      <div class="paper-links">
+        <a class="btn more" onclick="showhide('absagetaxes')">Abstract</a>
+        <a class="btn pdf empty">Published article</a>
+        <a class="btn paper empty">Working paper</a>
+        <a class="btn slides empty">Slides</a>
+        <a class="btn code empty">Codes</a>
+      </div>
+      <div id="absagetaxes" class="abstract" style="display:none">
+        Profit taxes reduce the value of running a firm, thus distorting firm entry. As a result, the equilibrium mass of firms is inefficiently low. We study whether making the tax rate depend on firm age can reduce this distortion. In a model of firm dynamics with entry and exit, a revenue-neutral shift of the tax burden from young to old firms raises the value of entry, because entrants discount the taxes they will pay later in life while the government collects from all cohorts at the same time. The higher value of entry raises the equilibrium wage, the productivity-weighted mass of firms and aggregate output. We calibrate the model to the size and age distribution of firms and compute the revenue-neutral, age-monotone tax schedule that maximizes output and welfare.
+      </div>
     </div>
 
   </div>
 
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- TEACHING -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+</div>
 
+<!-- ================================================================ -->
+<!-- TEACHING                                                          -->
+<!-- ================================================================ -->
 
-  <div class="section wide">
+<div class="section wide">
 
-    <h1>Teaching</h1>
+  <h1>Teaching</h1>
 
-    <div class="subsection">
-
-      Courses taught at <color>CUNEF Universidad</color> (undergraduate courses):
-      <ul>
-        <!-- <li><a href="teaching/ecoenv/home.html">Economic environment</a>: 2025</li>
-        <li><a href="teaching/emyb/home.html">Monetary and banking economics</a>: 2023, 2024, 2025</li> -->
-        <li>Economic environment: 2025</li>
-        <li>Monetary and banking economics: 2023, 2024, 2025</li>
-        <li>Macroeconomics: 2020, 2021, 2022, 2023, 2024</li>
-        <li>Bachelor's thesis supervision: 2022</li>
-      </ul>
-
-      Courses taught at <color>CEMFI</color> (graduate courses):
-      <ul>
-        <li>Macroeconomics II (TA to <a id="tonibraun">R. Anton Braun</a>): 2019</li>
-        <li>Quantitative Methods (TA to <a id="enriquemoral">E. Moral-Benito</a>): 2017, 2018, 2019</li>
-        <li>Macroeconomics I (TA to <a id="josep">J. Pijoan-Mas</a>): 2015, 2016</li>
-      </ul>
-
-    </div>
-  </div>
-
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- POLICY WORK -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-
-  <div class="section wide">
-
-    <h1>Policy work</h1>
-
-    <div class="bullet subsection">
-      <!-- <color>External consultant at <a id=airef>AIReF</a></color> (2022): collaborated in the first report on the Spanish' Minimum Income Scheme<br> -->
-      
-      <a class="link" href="https://www.airef.es/en/centro-documental/opinions-centro-documental/opinion-on-minimum-living-income/">I Opinion on the Spanish Minimum Income Scheme</a> – July, 2022<br>
-      <span class="abstarct">AIReF (Spain's Independent Authority for Fiscal Responsability)</span>
-    </div>
-
-    <div class="bullet subsection">
-      <!-- <color>Analyst at <a id=airef>AIReF</a></color> (09/2019 – 08/2020): collaborated in the evaluation of tax benefits in the Spanish income tax<br> -->
-      <a class="link" href="https://www.airef.es/en/document-center/studies-document-center/tax-benefits/">Evaluation of tax benefits in Spanish income taxes</a>  (Spending Review 2018-2021, Phase II) – July, 2020<br>
-      <span class="abstarct">AIReF (Spain's Independent Authority for Fiscal Responsability)</span>
-    </div>
+  <div class="teaching-block">
     
   </div>
-
-
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!-- CODES -->
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-
-
-  <div class="section wide"> 
-
-    <h1>Codes</h1>
-
-    <div class="subsection bullet" style="margin-bottom:5px"> 
-      <a class="github" style="margin:0px" href="https://github.com/borjapetit/tex_template_slides">bpslides.cls</a>: A Beamer template for academic presentations.
-    </div>
-
-    <div class="subsection bullet" style="margin-bottom:5px"> 
-      <a class="github" style="margin:0px" href="https://github.com/borjapetit/borjapetit.github.io">borjapetit.github.io</a>: The HTML and CSS codes of my personal website.
-    </div>
-
-    <div class="subsection bullet" style="margin-bottom:5px"> 
-      <a class="github" style="margin:0px" href="https://borjapetit.github.io/fortran_toolkit/">Fortran toolkit</a>: A collection of Fortran functions and subroutines that I typically use in my research (in progress).
-    </div>
+  <div class="teaching-block">
+    <p>Courses at <span class="color">CUNEF Universidad</span> (undergraduate):</p>
+    <ul>
+      <li>Economic environment &ndash; 2025</li>
+      <li>Monetary and banking economics &ndash; 2023, 2024, 2025</li>
+      <li>Macroeconomics &ndash; 2020, 2021, 2022, 2023, 2024</li>
+      <li>Bachelor&rsquo;s thesis supervision &ndash; 2022</li>
+    </ul>
   </div>
 
-  <!-- <div class="footer">
-  </div> -->
+  <div class="teaching-block">
+    <p>Courses at <span class="color">CEMFI</span> (graduate, Teaching Assistant):</p>
+    <ul>
+      <li>Macroeconomics II (TA to <a id="tonibraun">R. Anton Braun</a>) &ndash; 2019</li>
+      <li>Quantitative Methods (TA to <a id="enriquemoral">E. Moral-Benito</a>) &ndash; 2017, 2018, 2019</li>
+      <li>Macroeconomics I (TA to <a id="josep">J. Pijoan-Mas</a>) &ndash; 2015, 2016</li>
+    </ul>
+  </div>
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+</div>
+
+<!-- ================================================================ -->
+<!-- POLICY WORK                                                       -->
+<!-- ================================================================ -->
+
+<div class="section wide">
+
+  <h1>Policy Work</h1>
+
+  <div class="policy-item">
+    <div>
+      <a class="policy-title" href="https://www.airef.es/en/centro-documental/opinions-centro-documental/opinion-on-minimum-living-income/">
+        I Opinion on the Spanish Minimum Income Scheme</a><span class="policy-date">&ndash; July 2022</span>
+    </div>
+    <div class="policy-source">AIReF &mdash; Spain&rsquo;s Independent Authority for Fiscal Responsibility</div>
+  </div>
+
+  <div class="policy-item">
+    <div>
+      <a class="policy-title" href="https://www.airef.es/en/document-center/studies-document-center/tax-benefits/">
+        Evaluation of tax benefits in Spanish income taxes</a><span class="policy-date">&ndash; July 2020</span>
+    </div>
+    <div class="policy-source">AIReF &mdash; Spending Review 2018&ndash;2021, Phase II</div>
+  </div>
+
+</div>
+
+<!-- ================================================================ -->
+<!-- CODES                                                             -->
+<!-- ================================================================ -->
+
+<div class="section wide">
+
+  <h1>Codes</h1>
+
+  <div class="code-item">
+    <a class="code-link" href="https://github.com/borjapetit/tex_template_slides">bpslides.cls</a>:
+    A Beamer template for academic presentations.
+  </div>
+
+  <div class="code-item">
+    <a class="code-link" href="https://github.com/borjapetit/borjapetit.github.io">borjapetit.github.io</a>:
+    HTML and CSS source for this website.
+  </div>
+
+  <div class="code-item">
+    <a class="code-link" href="https://borjapetit.github.io/fortran_toolkit/">Fortran toolkit</a>:
+    A collection of Fortran functions and subroutines used in research (in progress).
+  </div>
+
+</div>
+
+<!-- ================================================================ -->
 
 <script src="files/src/jsfile.js"></script>
 </body>
