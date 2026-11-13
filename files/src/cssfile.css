@@ -7,6 +7,7 @@
   /* color for title and section headers */
   --main:  navy ;
   --main: rgb(0,100,0);
+  --main: #004481;
   /* color for links */
   --link: navy ;/* #1a5fb4;*/
   /* color for links (hover) */
